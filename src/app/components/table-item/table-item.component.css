@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color:#dddd;
+}
+.id{
+  flex:none;
+  width: 75px;
+  border: 1px solid black;
+}
+.last_name{
+    flex:2;
+    border: 1px solid black;
+}
+.birthday{
+    flex:none;
+  width: 75px;
+    border: 1px solid black;
+}
+.sex{
+    flex:none;
+  width: 75px;
+    border: 1px solid black;
+}
+.first_name{
+    flex:2;
+    border: 1px solid black;
+}
+.account_number{
+    flex: 1;
+    border: 1px solid black;
+}
+.account_balance{
+    flex:1;
+    border: 1px solid black;
+}

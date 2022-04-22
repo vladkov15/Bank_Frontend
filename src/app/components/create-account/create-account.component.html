@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 style="text-align: center;">Создайте банковский счет</h1>
+    <p style="text-align: center;">Пожалуйста заполните все данные для создания счета</p>
+    <hr>
+    
+    <form class="form" (ngSubmit)="onSubmit()">
+    <label for="first_name"><b>Имя</b></label>
+        <input type="text" maxlength="30" placeholder="Введите имя" [(ngModel)]="account.first_name" name="first_name" required>
+    <label for="second_name"><b>Фамилия</b></label>
+        <input type="text"  maxlength="30" placeholder="Введите фамилию" [(ngModel)]="account.last_name" name="second_name" required>
+    <label for="sex"><b>Пол</b></label>
+        <input type="text" maxlength="6" placeholder="Мужской или женский" [(ngModel)]="account.sex" name="sex" required>
+    <label for="birthday"><b>Дата рождения</b></label>
+        <input type="text" maxlength="10" placeholder="Дата рождения(дд.мм.гггг)" [(ngModel)]="account.birthday" name="birthday" required>
+    <label for="account_number"><b>Номер счета </b><button type="button" (click)="OnToggle()">Создать автоматически</button>
+    </label>
+        <input type="text" maxlength="6" placeholder="до 6 символов(ХХХХХХ)" [(ngModel)]="account.account_number" name="account_number" required>
+    <hr>
+    <p>При создании счета вы соглашаетесь с <a href="#">Политикой безопасности</a></p>
+
+    <input type="submit" value="Создать новый счет" class="createbtn">
+    </form>
+</div>

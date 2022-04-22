@@ -1,0 +1,38 @@
+.text{
+    text-align: center;
+}
+hr{
+    background-color: black;
+    height: 3px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 45px;
+}
+.id{
+  flex:none;
+  width: 75px;
+}
+.last_name{
+    flex:2;
+}
+.birthday{
+    flex:none;
+  width: 75px;
+}
+.sex{
+    flex:none;
+  width: 75px;
+}
+.first_name{
+    flex:2;
+}
+.account_number{
+    flex: 1;
+}
+.account_balance{
+    flex:1;
+    
+}

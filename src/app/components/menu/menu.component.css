@@ -1,0 +1,10 @@
+table{
+    text-align: center;
+    border: 1px solid grey;
+    border-spacing: 10px;
+}
+
+.tbl{
+    position:relative;
+    left: 75px;
+}

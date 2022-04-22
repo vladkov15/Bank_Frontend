@@ -1,0 +1,20 @@
+<div class="container">
+    <h3>Вы хотите пополнить баланс или снять деньги?</h3>
+    <hr>
+    <form class="form" (ngSubmit)="onSubmit()">
+        <input type="radio" name="money" (change)="OnToggle()"  checked>
+    <label for="up">Пополнить счет</label> ||
+        <input type="radio" name="money" (change)="OnToggle()"  >
+    <label for="down">Снять со счета</label>
+    <hr>
+    <p><b>Введите номер счета</b></p>
+    <label for="account_number"><b></b></label>
+        <input type="text" maxlength="6" placeholder="(XXXXXX)" [(ngModel)]="account_number" name="account_number" required>
+    <hr>
+    <p><b>Введите нужную сумму</b></p>
+    <label for="value"><b></b></label>
+        <input type="number" [(ngModel)]="amount" name="value" required>
+   <button type="input">Подтвердить</button>
+</form>
+
+</div>

@@ -1,0 +1,31 @@
+<div class="text">
+<h1>Существующие счета</h1>
+</div>
+<hr>
+<div class="container">
+    <div class="id">
+        <p>ID</p>
+    </div>
+    <div class="first_name">
+        <p>First name</p>
+    </div>
+    <div class="last_name">
+        <p>Last name</p>
+    </div>
+    <div class="birthday">
+        <p>Birthday</p>
+    </div>
+    <div class="sex">
+        <p>Sex</p>
+    </div>
+    <div class="account_number">
+        <p>Account number</p>
+    </div>
+    <div class="account_balance">
+        <p>Account balance</p>
+    </div>
+</div>
+<app-table-item *ngFor="let ak of aki"
+    [Account]="ak">
+</app-table-item>
+
